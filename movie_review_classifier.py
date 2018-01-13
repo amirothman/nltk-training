@@ -56,5 +56,5 @@ print("classification")
 classifier = nltk.NaiveBayesClassifier.train(training_set)
 
 print("evaluation")
-results = nltk.classify(classifier, test_set)
+results = nltk.classify.accuracy(classifier, test_set)
 print(results)
